@@ -14,7 +14,15 @@ function BinarioADecimal(num) {
 
 function DecimalABinario(num) {
   // tu codigo aca
-
+  
+    let almacenador = []
+    while (num!==0){
+        let residuo = parseInt(num%2)
+        num = Math.floor(num/2);
+        almacenador.unshift(residuo);
+        
+    }
+    return almacenador.join("");
 }
 
 
