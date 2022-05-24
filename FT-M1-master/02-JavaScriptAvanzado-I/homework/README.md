@@ -13,25 +13,25 @@ var a = 5;
 var b = 10;
 var c = function(a, b, c) {
   var x = 10;
-  console.log(x);
-  console.log(a);
+  console.log(x);//10
+  console.log(a);//5
   var f = function(a, b, c) {
-    b = a;
-    console.log(b);
-    b = c;
+    b = a;//5
+    console.log(b);//5
+    b = c;// function
     var x = 5;
   }
   f(a,b,c);
-  console.log(b);
+  console.log(b);//10
 }
 c(8,9,10);
-console.log(b);
-console.log(x);
+console.log(b);//10
+console.log(x);//1
 ```
 
 ```javascript
-console.log(bar);
-console.log(baz);
+console.log(bar); //undefined
+console.log(baz);//undefined
 foo();
 function foo() { console.log('Hola!'); }
 var bar = 1;
